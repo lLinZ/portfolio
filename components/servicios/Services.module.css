@@ -1,0 +1,113 @@
+.card{
+    margin: 10px;
+    font-family: 'Kanit';
+    font-size: 24px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0px 4px rgba(0,0,0,1);
+    transform-origin:center;
+    transform: rotate(0deg);
+    box-shadow: 0 8px 32px rgba(100,100,100,0.2);
+}
+.big{
+    width:250px;
+    height:300px;
+}
+.small{
+    width:200px;
+    height:200px;
+}
+
+.animate{
+    animation: inclinar 20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animate2{
+  animation: inclinar2 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.animate-slightly{
+    animation: inclinar4 20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animate-slightly2{
+    animation: inclinar3 20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes inclinar2 {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  @keyframes inclinar {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  @keyframes inclinar4 {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+  @keyframes inclinar3 {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+/* Estilos para móviles */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Tus estilos para móviles aquí */
+  .big{
+    width:150px;
+    height:200px;
+  }
+  .small{
+    width:100px;
+    height:100px;
+  }
+  .card{
+    font-size: 16px;
+  }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 481px){
+  /* Tus estilos para tabletas aquí */
+  .big{
+    width:250px;
+    height:300px;
+  }
+  .small{
+    width:200px;
+    height:200px;
+  }
+  .card{
+    font-size: 24px;
+  }
+}
